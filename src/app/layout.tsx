@@ -67,13 +67,14 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-      { url: '/JZ666-Game-Icon.webp', type: 'image/webp', sizes: '1000x1000' }
+      { url: '/favicon-32.png', type: 'image/png', sizes: '32x32' },
+      { url: '/icon-192.png', type: 'image/png', sizes: '192x192' },
+      { url: '/favicon.ico', sizes: '48x48' },
     ],
     apple: [
-      { url: '/JZ666-Game-Icon.webp', sizes: '180x180' }
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
     ],
-    shortcut: '/favicon.ico'
+    shortcut: '/favicon-32.png',
   },
   verification: {
     google: "8a7c21f6e90a89ef",
@@ -135,10 +136,10 @@ export default function RootLayout({
         {/* GEO: geographic targeting for Pakistan (AEO/GEO) */}
         <meta name="geo.region" content="PK" />
         <meta name="geo.placename" content="Pakistan" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/JZ666-Game-Icon.webp" type="image/webp" sizes="1000x1000" />
+        <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+        <link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192" />
         <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/JZ666-Game-Icon.webp" sizes="180x180" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 
         {/* Preconnect to external domains for faster loading */}
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />

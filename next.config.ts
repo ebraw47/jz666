@@ -100,10 +100,25 @@ const nextConfig: NextConfig = {
           { key: "X-Robots-Tag", value: "noindex" },
           {
             key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
+            value: "public, max-age=86400, must-revalidate",
           },
         ],
       },
+      ...[
+        "/favicon-32.png",
+        "/apple-touch-icon.png",
+        "/icon-192.png",
+        "/icon-512.png",
+      ].map((source) => ({
+        source,
+        headers: [
+          { key: "X-Robots-Tag", value: "noindex" },
+          {
+            key: "Cache-Control",
+            value: "public, max-age=86400, must-revalidate",
+          },
+        ],
+      })),
     ];
   },
 
