@@ -9,7 +9,7 @@ export const SUPPORT_EMAIL = 'support@jz666apk.com.pk';
 
 /** External / official APK download URL */
 export const DOWNLOAD_APP_URL =
-  process.env.NEXT_PUBLIC_DOWNLOAD_URL || 'https://jz666b.com?referralcode=76N8A3';
+  process.env.NEXT_PUBLIC_DOWNLOAD_URL || 'https://jz666b.com?referralcode=SE2069';
 
 /** Official Facebook page */
 export const FACEBOOK_URL =
